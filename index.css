@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  box-sizing: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+}
+
+.subtitle {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+  letter-spacing: 0.3rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.title {
+  font-family: "Fraunces", "sans-serif";
+  font-size: 2.3rem;
+}
+
+.description {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  margin-top: 1rem;
+  line-height: 1.5rem;
+  color: hsl(228, 12%, 48%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: auto;
+  /* border: 1px solid black; */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.product-image {
+  width: 100%;
+}
+
+.mobile-img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.desktop-img {
+  display: none;
+}
+
+.product-description {
+  padding: 1.5rem;
+  height: 100%;
+}
+
+.price {
+  font-family: "Fraunces", "sans-serif";
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.new-price {
+  font-size: 2.2rem;
+}
+
+.old-price {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-left: 1.5rem;
+  text-decoration-line: line-through;
+}
+
+button {
+  font-family: "Montserrat", "sans-serif";
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1.3rem 0;
+  border: none;
+  border-radius: 10px;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+  text-align: center;
+}
+
+button img {
+  margin-right: 0.7rem;
+}
+
+button:hover {
+  background-color: hsl(212, 21%, 14%);
+  cursor: pointer;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .card {
+    width: 600px;
+    flex-direction: row;
+  }
+
+  .product-description {
+    padding: 2rem;
+    width: 60%;
+  }
+
+  .product-image {
+    width: 80%;
+  }
+
+  .mobile-img {
+    display: none;
+  }
+
+  .desktop-img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  .description {
+    line-height: 1.7rem;
+  }
+
+  .price {
+    margin-top: 2rem;
+  }
+
+  button {
+    padding: 1rem 0;
+    margin-top: 3rem;
+  }
+}
